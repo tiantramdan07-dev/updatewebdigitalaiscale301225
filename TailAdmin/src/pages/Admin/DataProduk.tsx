@@ -66,7 +66,7 @@ const DataProduk: React.FC = () => {
         localStorage.getItem("token") || sessionStorage.getItem("token");
 
       if (!token) {
-        window.location.href = "/AiScale/signin";
+        window.location.href = "/signin";
         return;
       }
 
@@ -87,7 +87,7 @@ const DataProduk: React.FC = () => {
         );
 
         setTimeout(() => {
-          window.location.href = "/AiScale/signin";
+          window.location.href = "/signin";
         }, 800);
 
         return;

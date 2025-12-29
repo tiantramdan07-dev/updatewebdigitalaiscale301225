@@ -62,7 +62,7 @@ export default function SignUpForm() {
         setModalOpen(true);
 
         setTimeout(() => {
-          window.location.href = "/AiScale/signin";
+          window.location.href = "/signin";
         }, 1500);
       } else {
         setModalMessage(data.error || "Gagal registrasi");
@@ -91,7 +91,7 @@ export default function SignUpForm() {
       />
 
       <div className="w-full max-w-md mx-auto mb-5 sm:pt-10">
-        <Link to="/AiScale/" className="inline-flex items-center text-sm text-gray-500 transition-colors hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+        <Link to="/" className="inline-flex items-center text-sm text-gray-500 transition-colors hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
           <ChevronLeftIcon className="size-5" />
           Back to dashboard
         </Link>

@@ -31,7 +31,7 @@ export default function App() {
         <ScrollToTop />
         <Routes>
           {/* Dashboard Layout */}
-          <Route path="/AiScale/" element={<AppLayout />}>
+          <Route path="/" element={<AppLayout />}>
             <Route index element={<ScaleDashboard />} />
             <Route path="scan" element={<Scanner />} />
 
@@ -65,8 +65,8 @@ export default function App() {
           </Route>
 
           {/* Auth Layout */}
-          <Route path="/AiScale/signin" element={<SignIn />} />
-          <Route path="/AiScale/signup" element={<SignUp />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
 
 
           {/* Fallback Route */}

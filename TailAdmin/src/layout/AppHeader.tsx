@@ -83,7 +83,7 @@ const AppHeader: React.FC = () => {
             {/* Cross Icon */}
           </button>
 
-          <Link to="/AiScale/" className="lg:hidden">
+          <Link to="/" className="lg:hidden">
             <img
               className="dark:hidden"
               src="images/logo/logoimi.png"

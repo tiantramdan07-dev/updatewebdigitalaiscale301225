@@ -11,15 +11,15 @@ const LayoutContent: React.FC = () => {
   const location = useLocation();
 
   // ✅ ALLOWED ROUTES tanpa login
-  const publicRoutes = ["/AiScale/signin", "/AiScale/signup"];
+  const publicRoutes = ["/signin", "/signup"];
 
 useEffect(() => {
   const token =
     localStorage.getItem("token") || sessionStorage.getItem("token");
 
-  // ⛔ Jika tidak ada token & sedang bukan di public page → tendang ke login
+  // ⛔ Jika tidak ada token & sedang bukan di public page → kembali ke login
   if (!token && !publicRoutes.includes(location.pathname)) {
-    navigate("/AiScale/signin");
+    navigate("/signin");
   }
 }, [location.pathname, navigate]);
 

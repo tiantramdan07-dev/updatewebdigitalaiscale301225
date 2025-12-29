@@ -58,7 +58,7 @@ export default function UserDropdown() {
   const handleLogout = () => {
     localStorage.removeItem("user");
     localStorage.removeItem("token");
-    window.location.href = "/AiScale/signin";
+    window.location.href = "/signin";
   };
 
   return (

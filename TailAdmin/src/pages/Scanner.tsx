@@ -7,7 +7,7 @@ export default function Scanner() {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    if (!token) navigate("/AiScale/signin");
+    if (!token) navigate("/signin");
   }, []);
 
   return (

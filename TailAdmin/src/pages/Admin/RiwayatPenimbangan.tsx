@@ -61,7 +61,7 @@ const RiwayatPenimbangan: React.FC = () => {
 
     // Jika dua-duanya tidak ada → redirect login
     if (!token) {
-      window.location.href = "/AiScale/signin";
+      window.location.href = "/signin";
       return;
     }
 
@@ -76,7 +76,7 @@ const RiwayatPenimbangan: React.FC = () => {
       if (res.status === 401) {
         localStorage.removeItem("token");
         sessionStorage.removeItem("token");
-        window.location.href = "/AiScale/signin";
+        window.location.href = "/signin";
         return;
       }
 
